@@ -30,6 +30,10 @@ button {
     border-radius: 5px;
 }
 
+#count-of-the-day {
+    padding-top: 20px;
+}
+
 #counter {
     background: darkred;
 }
