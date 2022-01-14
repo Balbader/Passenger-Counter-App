@@ -1,20 +1,17 @@
 let count = 0;
-
 let countEl = document.getElementById("count-el");
-
+let finalCount = document.getElementById('final-count');
 const addButton = document.getElementById('counter');
+const saveButton = document.getElementById('save-btn');
 
 addButton.addEventListener('click', () => {
     count += 1;
     countEl.innerText = count;
 });
 
-let finalCount = document.getElementById('final-count');
-
-const saveButton = document.getElementById('save-btn');
-
 saveButton.addEventListener('click', () => {
-    finalCount.innerText = count;
+    let countStr = count + ' - ';
+    finalCount.textContent += countStr;
     count = 0;
     countEl.innerText = count;
 })
