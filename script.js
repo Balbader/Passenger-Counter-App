@@ -6,12 +6,12 @@ const saveButton = document.getElementById('save-btn');
 
 addButton.addEventListener('click', () => {
     count += 1;
-    countEl.innerText = count;
+    countEl.textContent = count;
 });
 
 saveButton.addEventListener('click', () => {
     let countStr = count + ' - ';
     finalCount.textContent += countStr;
     count = 0;
-    countEl.innerText = count;
+    countEl.textContent = count;
 })
