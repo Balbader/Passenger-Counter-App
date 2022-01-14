@@ -1,14 +1,20 @@
 let count = 0;
 
+let countEl = document.getElementById("count-el");
+
 const addButton = document.getElementById('counter');
+
 addButton.addEventListener('click', (addButton) => {
     count += 1;
-    document.getElementById('count-el').innerText = count;
+    countEl.innerText = count;
 });
 
+let finalCount = document.getElementById('final-count');
+
 const saveButton = document.getElementById('save-btn');
+
 saveButton.addEventListener('click', (saveButton) => {
-    document.getElementById('final-count').innerText = count;
+    finalCount.innerText = count;
     count = 0;
-    document.getElementById('count-el').innerText = count;
+    countEl.innerText = count;
 })
